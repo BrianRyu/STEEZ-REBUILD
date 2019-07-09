@@ -1,13 +1,11 @@
 const express = require('express');
-const logger = require('morgan');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -20,10 +18,10 @@ connection.once('open', () => {
     console.log(`MongoDB database connection estabilished successfully`);
 })
 
-// const productsRouter = require('./routes/products');
+const productsRouter = require('./routes/products');
 const usersRouter = require('./routes/users');
 
-// app.use('/products', productsRouter);
+app.use('/exercises', productsRouter);
 app.use('/users', usersRouter);
 
 app.listen(port, () => {
