@@ -7,7 +7,7 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Brian Ryu",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.6",
@@ -20,5 +20,5 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "backend api steez"
 }
