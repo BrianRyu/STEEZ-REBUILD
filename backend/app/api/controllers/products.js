@@ -70,9 +70,11 @@ module.exports = {
   },
   create: function(req, res, next) {
     productModel.create(
-      { name: product.name,
+      {
+        name: product.name,
         description: product.description,
-        img_url: product.img_url },
+        img_url: product.img_url
+      },
       function(err, result) {
         if (err) next(err);
         else

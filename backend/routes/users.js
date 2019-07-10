@@ -1,19 +1,10 @@
-const router = require('express').Router();
-let User = require('../app/api/models/users');
+const express = require("express");
+const router = express.Router();
+const userController = require("../app/api/controllers/users");
 
-router.route('/').get((req, res) => {
-    User.find()
-    .then(users => res.json(users))
-    .catch(err => res.status(400).json('Error: ' + err));
-})
 
-router.route('/add').post((req, res) => {
-    const username = req.body.username;
-    const newUser = new User({username});
-
-    newUser.save()
-    .then(() => res.json('User added!'))
-    .catch(err => res.status(400).json('Error ' + err))
-})
+router.get('/', userController.getAll);
+router.post("/register", userController.create);
+router.post("/authenticate", userController.authenticate);
 
 module.exports = router;
