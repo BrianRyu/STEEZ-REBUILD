@@ -1,10 +1,17 @@
-const express = require('express');
+const express = require("express");
 const cors = require('cors');
+const products = require("./routes/products");
+const users = require("./routes/users");
 const mongoose = require('mongoose');
+const jwt = require("jsonwebtoken");
+const app = express();
 
+app.set("secretKey", "nodeRestApi"); // jwt secret token
+
+
+// connection to mongodb
 require('dotenv').config();
 
-const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors());
@@ -17,13 +24,42 @@ const connection = mongoose.connection;
 connection.once('open', () => {
     console.log(`MongoDB database connection estabilished successfully`);
 })
+// public route
+app.use("/users", users);
+// private route
+app.use("/products", validateUser, products);
+app.get("/favicon.ico", function(req, res) {
+  res.sendStatus(204);
+});
+function validateUser(req, res, next) {
+  jwt.verify(req.headers["x-access-token"], req.app.get("secretKey"), function(
+    err,
+    decoded
+  ) {
+    if (err) {
+      res.json({ status: "error", message: err.message, data: null });
+    } else {
+      // add user id to request
+      req.body.userId = decoded.id;
+      next();
+    }
+  });
+}
 
-const productsRouter = require('./routes/products');
-const usersRouter = require('./routes/users');
+// express doesn't consider not found 404 as an error so we need to handle 404 explicitly
+// handle 404 error
+app.use(function(req, res, next) {
+  let err = new Error("Not Found");
+  err.status = 404;
+  next(err);
+});
+// handle errors
+app.use(function(err, req, res, next) {
+  console.log(err);
 
-app.use('/exercises', productsRouter);
-app.use('/users', usersRouter);
-
+  if (err.status === 404) res.status(404).json({ message: "Not found" });
+  else res.status(500).json({ message: "Something looks wrong :( !!!" });
+});
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 })
