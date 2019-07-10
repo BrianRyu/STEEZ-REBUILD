@@ -1,18 +1,19 @@
 const express = require("express");
 const cors = require('cors');
-const products = require("./routes/products");
-const users = require("./routes/users");
 const mongoose = require('mongoose');
 const jwt = require("jsonwebtoken");
+
+const products = require("./routes/products");
+const users = require("./routes/users");
+
 const app = express();
+const port = process.env.PORT || 5000;
 
-app.set("secretKey", "nodeRestApi"); // jwt secret token
-
+// jwt secret token
+app.set("secretKey", "nodeRestApi"); 
 
 // connection to mongodb
 require('dotenv').config();
-
-const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -26,8 +27,13 @@ connection.once('open', () => {
 })
 // public route
 app.use("/users", users);
+app.use("/products", products)
+
+
 // private route
-app.use("/products", validateUser, products);
+// app.use("/products", validateUser, products);
+
+
 app.get("/favicon.ico", function(req, res) {
   res.sendStatus(204);
 });
