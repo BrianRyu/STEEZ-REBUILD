@@ -71,9 +71,9 @@ module.exports = {
   create: function(req, res, next) {
     productModel.create(
       {
-        name: product.name,
-        description: product.description,
-        img_url: product.img_url
+        name: req.body.name,
+        img_url: req.body.img_url,
+        description: req.body.description
       },
       function(err, result) {
         if (err) next(err);

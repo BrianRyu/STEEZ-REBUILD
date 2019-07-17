@@ -23,6 +23,7 @@ module.exports = {
       } else {
         for (let post of posts) {
           postsList.push({
+            id: post._id,
             likes: post.likes,
             title: post.title,
             description: post.description,
@@ -71,10 +72,10 @@ module.exports = {
   create: function(req, res, next) {
     postModel.create(
       {
-        likes: post.likes,
-        title: post.title,
-        description: post.description,
-        img_url: post.img_url
+        likes: req.body.likes,
+        title: req.body.title,
+        description: req.body.description,
+        img_url: req.body.img_url
       },
       function(err, result) {
         if (err) next(err);
@@ -87,4 +88,5 @@ module.exports = {
       }
     );
   }
+
 };
