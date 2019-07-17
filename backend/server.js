@@ -5,6 +5,7 @@ const jwt = require("jsonwebtoken");
 
 const products = require("./routes/products");
 const users = require("./routes/users");
+const posts = require("./routes/posts");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -28,6 +29,7 @@ connection.once('open', () => {
 // public route
 app.use("/users", users);
 app.use("/products", products)
+app.use("/posts", posts)
 
 
 // private route

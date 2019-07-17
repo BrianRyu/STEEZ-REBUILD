@@ -1,9 +1,11 @@
 const Product = require('../app/api/models/products')
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/products', { useNewUrlParser: true });
 
-const products = [
+const uri = process.env.ATLAS_URI;
+mongoose.connect(`openUri(${uri})`, { useNewUrlParser: true, useCreateIndex: true });
+
+const products = 
     new Product({name: "Travis Scott x Air Jordan 1 Retro High OG 'Mocha'", img_url: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/018/783/118/original/488879_01.jpg.jpeg", description: "The Travis Scott x Air Jordan 1 Retro High features a new look on the iconic silhouette, thanks to an oversized backward-facing Swoosh on the lateral side. A traditionally oriented Swoosh graces the medial side of the upper, which is built with a blend of white leather and brown suede. Additional unique details include a double-layer construction on the collar and Scott’s crudely drawn face logo embossed on the heel."}),
     new Product({name: "Air Fear Of God Raid 'Black'", img_url: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/021/545/556/original/489359_01.jpg.jpeg", description: "Nike and frequent collaborator Fear Of God designer, Jerry Lorenzo, joined forces once again for the Air Fear Of God Raid 'Black' sneaker. Released in May 2019, the uniquely designed silhouette is inspired by one of Lorenzo’s favorite Nike designs, the Air Raid. Outfitted with a cross strap suede and textile upper above; below, its equipped with a double stacked Zoom Air unit in heel for a retro, yet futuristic finish."}),
     new Product({name: "OFF-WHITE x Air Jordan 1 Retro High OG 'UNC'", img_url: "https://image.goat.com/crop/750/attachments/product_template_additional_pictures/images/012/219/525/original/335047_01.jpg.jpeg", description: "Inspired by Michael Jordan’s alma mater, the Off-White x Air Jordan 1 Retro High OG ‘UNC’ carries a classic two-tone composition, filtered through Virgil Abloh’s unique design prism. The process involves taking a white leather base with dark powder blue overlays and adding embellishments that convey an expressive, handmade quality. They include detached Wings, a floating Swoosh, and lines of text on the medial-side quarter panel delineating the taxonomy of the shoe."}),
