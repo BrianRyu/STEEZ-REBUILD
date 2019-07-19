@@ -21,6 +21,14 @@ const PostSchema = new Schema({
      type: String,
      trim: true,
      required: true
- }
+ },
+ user: {
+     type: mongoose.Schema.Types.ObjectId,
+     ref: 'User'
+ },
+ products: [{
+     type: mongoose.Schema.Types.ObjectId,
+     ref: 'Product'
+ }]
 });
 module.exports = mongoose.model('Post', PostSchema)

@@ -24,6 +24,7 @@ const UserSchema = new Schema({
   }
 });
 
+// bcrypt for password protect/digest
 UserSchema.pre("save", function(next) {
   this.password = bcrypt.hashSync(this.password, saltRounds);
   next();

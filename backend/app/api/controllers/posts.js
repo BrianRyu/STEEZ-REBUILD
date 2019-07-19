@@ -27,7 +27,8 @@ module.exports = {
             likes: post.likes,
             title: post.title,
             description: post.description,
-            img_url: post.img_url
+            img_url: post.img_url,
+            products: post.products
           });
         }
         res.json({
@@ -75,7 +76,8 @@ module.exports = {
         likes: req.body.likes,
         title: req.body.title,
         description: req.body.description,
-        img_url: req.body.img_url
+        img_url: req.body.img_url,
+        products: req.body.products
       },
       function(err, result) {
         if (err) next(err);
