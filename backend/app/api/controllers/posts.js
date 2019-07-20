@@ -28,6 +28,7 @@ module.exports = {
             title: post.title,
             description: post.description,
             img_url: post.img_url,
+            user: post.user,
             products: post.products
           });
         }
@@ -77,6 +78,7 @@ module.exports = {
         title: req.body.title,
         description: req.body.description,
         img_url: req.body.img_url,
+        user: req.body.user,
         products: req.body.products
       },
       function(err, result) {
