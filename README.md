@@ -1,68 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to STEEZ. Style with ease.
 
-## Available Scripts
+Community based application where User can edit their 'My Steez' page by adding products of their choice. Products then can be used to create Steez.Fit Posts to be posted on the STEEZ.Hub community. All posts can be liked by the community and can be featured in the 'featured' list.
 
-In the project directory, you can run:
+All products can be sold. The more likes a post gets -> Will be featured which will provide higher possibility of sale.
 
-### `npm start`
+Please follow the instructions below to get the app up and running. If you have any issues - feel free to contact me directly at s.brianryu@gmail.com
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+npm install && npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+STEEZ.
+Users can Sign Up and Login. User must be logged in to add posts to their "My Steez." section and have full functionality of app in the Steez.Hub.
 
-### `npm test`
+All valid users can upload products into the Steez.Hub, providing collection for other users to be inspired to include in their "posts".
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+My Steez. - Container that holds all posts(MyFits) uploaded by the User.
 
-### `npm run build`
+Steez.Hub. - Works as the 'Community' where posts can be "liked"; top 3 highest likes of the week gets featured in the "SteezFits of the Week".
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Products - Select a product to view product details and descriptions.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+SteezCard - Each product will have Views and a Like button. Whichever product has most "Likes" will be featured in the "SteezFits of the Week" list.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+CSS
+Custom CSS - CSS Grid - CSS Hover Effects
