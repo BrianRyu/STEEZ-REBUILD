@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-dom';
 
 
 export default function Login(props) {
@@ -15,8 +16,13 @@ export default function Login(props) {
     }
 
     function handleSubmit(e){
-        console.log(e)
+        console.log(e) 
     }
+
+    useEffect(() => {
+        // fetch route goes here to authentincate user once user logs in
+        fetch("http://localhost:5000/register")
+    })
 
     return (
         <div className="login-div">

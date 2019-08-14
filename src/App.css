@@ -1,0 +1,412 @@
+
+/* HEADER / NAV CSS */
+.navbar {
+    font-family: Plain;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgb(119, 119, 119);
+  }
+  
+  .navlink {
+    float: right;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .mainlogo {
+    text-align: center;
+    position: fixed;
+    padding: 10px 10px;
+  }
+  
+  /* LOGIN FORM */
+  .login-div {
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 10%;
+    font-family: Plain;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgb(119, 119, 119);
+  }
+  
+  .login-submit {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px black;
+    border-radius: 4px;
+    cursor: crosshair;
+    font-family: Plain;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgb(119, 119, 119);
+  }
+  
+  .register-div {
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 10%;
+    font-family: Plain;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgb(119, 119, 119);
+  }
+  
+  .register-submit {
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px black;
+    border-radius: 4px;
+    cursor: crosshair;
+    font-family: Plain;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgb(119, 119, 119);
+  }
+  
+  
+  
+  
+  /* REGISTER FORM */
+  .register-div {
+    text-align: center;
+  }
+  
+  /* GRID FOR PRODUCTS CSSS */
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    padding: 30px;
+    align-items: stretch;
+    justify-content: center;
+    align-content: space-between;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 300px;
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.1);
+    cursor: crosshair;
+  }
+  
+  /* PRODUCT SECTION STYLE */
+  
+  .product-header {
+    text-align: center;
+    font-family: Plain;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgb(119, 119, 119);
+  }
+  
+  .product-add-button {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Plain;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    margin: 4px 30px;
+    transition-duration: 0.4s;
+    cursor: crosshair;
+  }
+  
+  /* product image */
+  .product-image {
+    width: 30%;
+  }
+  
+  .product-part-image {
+    width: 20%;
+    height: 150px;
+  }
+  
+  .product-font {
+    font-family: Plain;
+    font-size: 11.5px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1.5px;
+    color: rgb(119, 119, 119);
+  }
+  
+  .top-product-font {
+    text-align: center;
+    font-family: Plain;
+    font-size: 11.5px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 1.5px;
+    color: rgb(119, 119, 119)
+  }
+  
+  .product-delete {
+    float: right;
+    font-size: 30%;
+    cursor: crosshair;
+  }
+  
+  .product-delete:hover {
+    background-color: red;
+  }
+  
+  
+  
+  .button {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Plain;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    margin: 4px 30px;
+    transition-duration: 0.4s;
+    cursor: crosshair;
+  }
+  
+  .button:hover {
+    filter: blur(1px);
+    transform: scale(1.1);
+  }
+  
+  .add-to-fit-button {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+  
+  .add-to-fit-button:hover {
+    background-color: #e7e7e7;
+  }
+  
+  
+  /* PRODUCT FORM STYLING */
+  .product-form-div {
+    text-align: center;
+    font-family: Plain;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color:black;
+    background-color: white;
+    padding: 10px;
+    align-items: stretch;
+    justify-content: center;	
+    justify-items: center;
+    align-content: space-between;
+  }
+  
+  
+  /* ********************************************        PRODUCT SHOW PAGE CSS **************************************** */
+  .product-show {
+    text-align: center;
+    font-family: Plain;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgb(119, 119, 119);
+  }
+  
+  
+  
+  .show-img {
+    width: 40%;
+  }
+  
+  .show-desc {
+    padding: 20px;
+  }
+  
+  
+  /* ERROR PAGE */
+  
+  .error-page {
+    text-align: center;
+  }
+  
+  
+  /* HOME PAGE BANNERS */
+  
+  .home-banner {
+    width: 100%;
+    position: relative;
+    height: 250px;
+    cursor: crosshair;
+    background-size: contain;
+    background-position: center;
+  }
+  
+  .home-banner:hover {
+    webkit-filter: blur(4px);
+    filter: blur(4px);
+  }
+  
+  
+  /* POST CSS */
+  
+  .post-image {
+    width: 40%;
+  }
+  
+  .post-button-div {
+    text-align: center;
+  }
+  
+  .part-add {
+    float: right;
+    font-size: 50%;
+    cursor: crosshair;
+  }
+  
+  .part-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    padding: 130px;
+    align-items: stretch;
+    justify-content: center;
+    align-content: space-between;
+  }
+  
+  .part-grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 275px;
+  }
+  
+  .part-grid-item:hover {
+    transform: scale(1.1);
+    cursor: crosshair;
+  }
+  
+  
+  
+  /* ERRRRRORRR PAGE */
+  
+  .error-div {
+    text-align: center;
+  }
+  
+  .error-img {
+    padding: 30px;
+  }
+  
+  /* COMMENTS CSS  */
+  
+  .comment-container {
+    border: 1px solid black;
+  }
+  
+  
+  /* View ALl Products and All SteezFits Button on SteezHub */
+  
+  .product-view-all {
+    float: right;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Plain;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    margin: 4px 30px;
+    transition-duration: 0.4s;
+    cursor: crosshair;
+  }
+  
+  .steezfit-view-all {
+    float: right;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Plain;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    margin: 4px 30px;
+    transition-duration: 0.4s;
+    cursor: crosshair;
+  }
