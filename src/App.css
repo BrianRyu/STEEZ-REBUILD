@@ -24,7 +24,7 @@
     position: fixed;
     padding: 10px 10px;
   }
-  
+
   /* LOGIN FORM */
   .login-div {
     text-align: center;
@@ -298,8 +298,8 @@
   
   
   /* HOME PAGE BANNERS */
-  
   .home-banner {
+    top: 100px;
     width: 100%;
     position: relative;
     height: 250px;
