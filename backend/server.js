@@ -32,6 +32,7 @@ app.use("/products", products)
 app.use("/posts", posts)
 
 
+
 // private route
 // app.use("/products", validateUser, products);
 
