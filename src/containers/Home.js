@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Home () {
     return (
-        <div>
+        <div className="home-wrapper">
             <Link to="/mysteez">
                 <img src={require("../Photos/mysteez.jpg")} alt="MY.STEEZ" className="home-banner" />
             </Link>
