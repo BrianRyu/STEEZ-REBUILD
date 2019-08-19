@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import ProductList from '../components/ProductList'
+
 export default function SteezHub() {
     return(
         <div>
@@ -23,7 +25,7 @@ export default function SteezHub() {
             <button className="product-view-all">View All Products</button>
             {/* </Link> */}
 
-            {/* <ProductList /> */}
+            <ProductList />
             <h1 className="product-header"> All SteezFits </h1>
             {/* route this button to list of all SteezFits */}
             {/* <Link to="/all-fits"> */}
