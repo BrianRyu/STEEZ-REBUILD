@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from 'react';
 
-export default function ProductShow(){
+export default function ProductShow(props){
 
     const [product, setProduct] = useState({})
 
-    async function fetchProduct(id){
-        const res = fetch(`http://localhost:5000/products/${id}`);
+    
+    async function fetchProduct(){
+        const res = await fetch(`http://localhost:5000/products/${props.match.params.id}`);
         res
             .json()
-            .then(res => setProduct(res))
+            .then(res => setProduct(res.data.products))
             .catch(err => console.log(err));
     }
 
@@ -17,8 +18,12 @@ export default function ProductShow(){
     })
 
     return(
-        <div>
-            {console.log(product)}
+        <div className="product-show">
+            <h1>{product.name}</h1>
+            <br/>
+            <img className="show-img" src={product.img_url} alt=""/>
+            <p className="show-desc">{product.description}</p>
+            {console.log(props)}
         </div>
     )
 }
