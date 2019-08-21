@@ -23,7 +23,6 @@ export default function ProductShow(props){
             <br/>
             <img className="show-img" src={product.img_url} alt=""/>
             <p className="show-desc">{product.description}</p>
-            {console.log(props)}
         </div>
     )
 }
