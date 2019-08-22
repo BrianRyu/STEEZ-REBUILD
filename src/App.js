@@ -9,6 +9,7 @@ import MySteez from './containers/MySteez';
 import SteezHub from './containers/SteezHub';
 import ProductShow from './components/ProductShow';
 import AllProducts from './components/AllProducts';
+import AllFits from './components/AllFits';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/steezhub" component={SteezHub}/> 
           <Route path="/product/:id" component={ProductShow}/>
           <Route path="/all-products" component={AllProducts}/>
+          <Route path="/all-fits" component={AllFits}/>
           <Route path="/" component={Home}/>
         </Switch>
       </BrowserRouter>

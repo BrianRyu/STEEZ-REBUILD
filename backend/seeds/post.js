@@ -9,7 +9,7 @@ const Posts = [
     new Post({
         likes: 0,
         title: "First Outfit!",
-        img_url: "https://scontent.cdninstagram.com/vp/76f97bb7f55e2c8079153df8fb19a660/5D554BE2/t51.2885-15/e35/p320x320/56237881_2334136760245868_8944875153641777963_n.jpg?_nc_ht=scontent.cdninstagram.com",
+        img_url: "https://i.pinimg.com/originals/d4/e2/5c/d4e25c7e55e0e35b651448dbe23eb84c.jpg",
         user: "5d361119c6221d33f1ba23ee",
         products: ["5d360801fdebaa313c265a92", "5d360801fdebaa313c265aa1", "5d360801fdebaa313c265a9a"]
 }),
