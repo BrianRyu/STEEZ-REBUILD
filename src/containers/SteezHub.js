@@ -29,9 +29,9 @@ export default function SteezHub() {
 
             <h1 className="product-header"> All SteezFits </h1>
             {/* route this button to list of all SteezFits */}
-            {/* <Link to="/all-fits"> */}
+            <Link to="/all-fits">
             <button className="steezfit-view-all">View All SteezFits</button>
-            {/* </Link> */}
+            </Link>
             <SteezFitList />
         </div>
     )
