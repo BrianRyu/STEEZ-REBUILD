@@ -20,9 +20,11 @@ export default function Navbar(props) {
                     
                     <button className="navlink" name="Login">LOGIN</button>
                 
+                
                 </div>
             </div>
-        </nav>
-      </div>
+          </nav>
+          <br/><br/>
+        </div>
     );
 }
